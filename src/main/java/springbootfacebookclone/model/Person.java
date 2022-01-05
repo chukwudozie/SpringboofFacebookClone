@@ -49,6 +49,16 @@ public class Person {
     @OneToOne(mappedBy = "person")
     private Likes myLike;
 
+    public Person(String firstname, String lastname, String password, String email, String dob, String gender) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.password =password;
+        this.email = email;
+        this.dob = dob;
+        this.gender = gender;
+
+    }
+
     public Long getId() {
         return id;
     }

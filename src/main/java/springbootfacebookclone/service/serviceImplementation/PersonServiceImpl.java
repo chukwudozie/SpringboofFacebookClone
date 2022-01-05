@@ -64,4 +64,14 @@ public class PersonServiceImpl implements PersonService {
 
         return userData;
     }
+
+    public boolean deleteUser(String email){
+        Person userDate =null;
+        userDate = personRepository.findPersonByEmail(email);
+        if(userDate != null){
+            personRepository.delete(userDate);
+            return true;
+        }
+        else return false;
+    }
 }

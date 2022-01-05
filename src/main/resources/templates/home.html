@@ -157,13 +157,13 @@
                             <div class="linear" style="background-color: #ffffff">
                                 <div class="titleText">
                                     <h2 style="color: #fff; padding: 10px; background-color: dodgerblue"><p th:text="${post.getTitle()}"></p></h2>
-                                    <p style="color: #000; padding: 10px;">
+                                    <p style="color: #000; padding: 10px;"> Posted By:
 <!--                                        <span style="font-weight: bold; font-size: 1.1em;">Author:</span>-->
                                         <span style="color:#000;" th:text="${post.getName()}"></span></p>
-                                    <div  th:if="${post.getImageName() != '/image/'}">
-                                    <img style="border: 3px solid dodgerblue" th:src="@{${post.getImageName()}}" class="majorpix" alt="" />
+                                    <div  th:if="${post.getImageName() != 'image/'}">
+                                    <img  th:src="@{${post.getImageName()}}" class="majorpix" alt="" />
                                     </div>
-                                    <div th:if="${post.getImageName() == '/image/'}">
+                                    <div th:if="${post.getImageName() == 'image/'}">
                                         <img style="  display: none; border: 3px solid dodgerblue;" th:src="@{${post.getImageName()}}" class="majorpix" alt="" /></div>
                                 </div>
                             </div>

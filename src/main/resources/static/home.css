@@ -7,12 +7,14 @@ html{
 
 body{
     /*background: #f0f2f5;*/
-    background: #242527;
+    /*background: #242527;*/
+    background:darkslategray;
     /*background: dodgerblue;*/
     color: #fff;
 }
 nav{
-    background: #242527;
+    /*background: #242527;*/
+    background:slategrey;
 }
 
 #header_search_query{
@@ -60,6 +62,7 @@ nav{
 
 .scroller {
     width: 100%;
+    border-radius: 10px;
     height: 950px;
     overflow-y: scroll;
     /* scrollbar-color: rebeccapurple green; */

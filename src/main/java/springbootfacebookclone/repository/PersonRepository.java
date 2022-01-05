@@ -7,4 +7,5 @@ import springbootfacebookclone.model.Person;
 @Repository
 public interface PersonRepository extends JpaRepository<Person, Long> {
     Person findPersonByEmail(String email);
+    Person deleteByEmail(String email);
 }

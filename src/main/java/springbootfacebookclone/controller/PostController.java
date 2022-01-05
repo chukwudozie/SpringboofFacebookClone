@@ -53,7 +53,7 @@ public class PostController {
             post.setPerson(person);
 
             //path to store image
-            String path = "/Users/mac/IdeaProjects/SpringbootFacebookClone-main 2/src/main/resources/static/image"+File.separator+post.getImageName();
+            String path = "/Users/mac/IdeaProjects/SpringbootFacebookClone-main /src/main/resources/static/image"+File.separator+post.getImageName();
 
             InputStream in = part.getInputStream();
             boolean success = uploadFile(in, path);

@@ -94,7 +94,7 @@ public class PostServiceImpl implements PostService {
                 post.setId(postEach.getPostId());
                 post.setTitle(postEach.getTitle());
                 post.setBody(postEach.getBody());
-                post.setImageName("/image/"+postEach.getImageName());
+                post.setImageName("image/"+postEach.getImageName());
                 post.setName(postEach.getPerson().getLastname()+ " "+ postEach.getPerson().getFirstname());
 
                 //the total number of likes on this particular post
